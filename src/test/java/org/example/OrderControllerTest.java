@@ -22,7 +22,7 @@ class OrderControllerTest {
         mockMvc.perform(get("/api/orders/1"))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.id").value(1))
-                .andExpect(jsonPath("$.totalAmount").value(99.99));
+                .andExpect(jsonPath("$.totalAmount").value(99.9));
     }
 
 }
