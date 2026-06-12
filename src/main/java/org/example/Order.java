@@ -16,13 +16,18 @@ public class Order {
 
     private Double totalAmount;
 
+    @Enumerated(EnumType.STRING)
+    @Column(nullable = false)
+    private Currency currency;
+
     public Order() {
         // Required by JPA and used in repository tests.
     }
 
-    public Order(Long id, Double totalAmount) {
+    public Order(Long id, Double totalAmount, Currency currency) {
         this.id = id;
         this.totalAmount = totalAmount;
+        this.currency = currency;
     }
 
 }
