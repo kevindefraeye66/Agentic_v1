@@ -53,8 +53,7 @@ There is no complex domain logic yet. The current implementation is a thin contr
 ### Tables
 - `orders`
   - Expected by JPA entity mapping: `id`, `total_amount`
-  - Seed script currently inserts `currency` as well; if the entity remains unchanged, align `data.sql` with the mapped columns to avoid schema/seed drift.
-
+  
 ## New Developer Quick Start
 
 ### To Add a New Feature
