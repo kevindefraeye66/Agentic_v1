@@ -44,4 +44,11 @@ Add a `Currency` enum (`USD`, `EUR`). Extend `Order` with `@Enumerated(EnumType.
 |---|----------|--------|--------|
 | 1 | Should `OrderDto` be a Java record as planned? | Maven's runtime JVM is Java 1.8 (JAVA_HOME not set to the installed Zulu 21); records require Java 16+. Replaced with a Lombok `@Getter @AllArgsConstructor` class — identical API surface, same JSON output. | `OrderDto.java` uses Lombok instead of a record declaration. No functional change. |
 
+## Pull Request
+- **URL:** https://github.com/kevindefraeye66/Agentic_v1/compare/main...feat/ATT2?expand=1
+- **Branch:** `feat/ATT2` → `main`
+- **Opened:** Pending — branch pushed, `gh` CLI not authenticated. Open via the URL above.
+- **Status:** Branch pushed ✅ | PR creation: pending manual step
+- **GHAS / SonarQube:** Pending repository configuration (see `.github/agents/pull-request.md`)
+
 
