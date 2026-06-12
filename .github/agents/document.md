@@ -195,7 +195,7 @@ Before presenting the approval gate:
 Present the final documentation and ask:
 
 > **Document phase complete.**
-> - ✓ All acceptance criteria from doc/pr-log verified against code
+> - ✓ All acceptance criteria from doc/pr-log/<ticket_id>.md verified against code
 > - ✓ doc/SERVICE_DOC.md created/updated with comprehensive coverage
 > - ✓ New developers can now understand the codebase entry points
 > 

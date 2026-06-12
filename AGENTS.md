@@ -120,5 +120,5 @@ scope, the agent should:
 | 1 | `.github/agents/intake-and-plan.md` | Understand requirement, plan, get approval |
 | 2 | `.github/agents/develop.md` | Implement plan, write tests, get approval |
 | 3 | `.github/agents/document.md` | Verify requirements, create/update doc/SERVICE_DOC.md |
-| 4 | `.github/agents/pull-request.md` | Open GitHub PR, run GHAS + SonarQube, record PR URL in doc/pr-log |
+| 4 | `.github/agents/pull-request.md` | Open GitHub PR, run GHAS + SonarQube, record PR URL in doc/pr-log/<ticket_id>.md |
 

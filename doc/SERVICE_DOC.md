@@ -64,12 +64,12 @@ There is no complex domain logic yet. The current implementation is a thin contr
 4. Add tests under `src/test/java/org/example/`.
 
 ### To Run Tests
-```bash
+```powershell
 mvn test
 ```
 
 ### To Start the Application
-```bash
+```powershell
 mvn spring-boot:run
 ```
 
