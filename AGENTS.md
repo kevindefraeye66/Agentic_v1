@@ -28,8 +28,8 @@ one phase and produces a single hand-off artefact for the next.
          ▼
 ┌─────────────────────┐
 │  Phase 3            │  .github/agents/document.md
-│  Document           │  Input : approved code diff + pr-log/<ticket_id>.md
-│                     │  Output: verified requirements + updated SERVICE_DOC.md
+│  Document           │  Input : approved code diff + doc/pr-log/<ticket_id>.md
+│                     │  Output: verified requirements + updated doc/SERVICE_DOC.md
 └────────┬────────────┘
          │ approve
          ▼
@@ -119,6 +119,6 @@ scope, the agent should:
 |-------|------|----------------|
 | 1 | `.github/agents/intake-and-plan.md` | Understand requirement, plan, get approval |
 | 2 | `.github/agents/develop.md` | Implement plan, write tests, get approval |
-| 3 | `.github/agents/document.md` | Verify requirements, create/update SERVICE_DOC.md |
-| 4 | `.github/agents/pull-request.md` | Open GitHub PR, run GHAS + SonarQube, record PR URL in pr-log |
+| 3 | `.github/agents/document.md` | Verify requirements, create/update doc/SERVICE_DOC.md |
+| 4 | `.github/agents/pull-request.md` | Open GitHub PR, run GHAS + SonarQube, record PR URL in doc/pr-log |
 

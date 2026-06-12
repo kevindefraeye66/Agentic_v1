@@ -73,7 +73,7 @@ After every exchange, append:
 > is approved. Reply `approve` to proceed, or continue the discussion.
 
 ### Step 4 · Create Requirement Log
-Before drafting the plan, create the file `pr-log/<ticket_id>.md` in the
+Before drafting the plan, create the file `doc/pr-log/<ticket_id>.md` in the
 repository.  This file is the **single source of truth** for the requirement
 and must be committed alongside any code changes so the full chain is
 traceable.
@@ -163,7 +163,7 @@ Present the plan and ask:
 
 ### Step 7 · Handoff
 On approval:
-1. Ensure `pr-log/<ticket_id>.md` is up to date — add the approved plan's
+1. Ensure `doc/pr-log/<ticket_id>.md` is up to date — add the approved plan's
    **Summary** section to it as a new `## Approved Plan Summary` section.
 2. Output a final, clean copy of the approved plan (no open questions, no
    draft markers).
@@ -174,7 +174,7 @@ On approval:
 ✅ Plan approved for <ticket_id>.
 Handing off to → Phase 2: Develop (.github/agents/develop.md)
 Artefacts:
-  - pr-log/<ticket_id>.md  ← requirement log (source of truth)
+  - doc/pr-log/<ticket_id>.md  ← requirement log (source of truth)
   - the plan above         ← implementation blueprint for the develop agent
 ---
 ```

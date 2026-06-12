@@ -27,8 +27,8 @@ security gates that protect the main branch.
 | Field | Description |
 |-------|-------------|
 | `ticket_id` | From Phase 1; used as reference in the PR title and body. |
-| `pr-log/<ticket_id>.md` | Full requirement log — the narrative body of the PR. |
-| `SERVICE_DOC.md` | Updated documentation — confirms docs are in sync with code. |
+| `doc/pr-log/<ticket_id>.md` | Full requirement log — the narrative body of the PR. |
+| `doc/SERVICE_DOC.md` | Updated documentation — confirms docs are in sync with code. |
 | Code & test artefacts | All source and test files created or modified in Phase 2. |
 
 ---
@@ -47,16 +47,16 @@ default branch (`main`). The PR will be populated with a structured body
 derived from the pipeline artefacts:
 
 - **Title:** `[<ticket_id>] <one-line summary from the approved plan>`
-- **Body:** Derived from `pr-log/<ticket_id>.md`, including:
+- **Body:** Derived from `doc/pr-log/<ticket_id>.md`, including:
   - Original requirement
   - Final understanding and acceptance criteria
   - Summary of code changes (impacted files)
-  - Link to `SERVICE_DOC.md` for documentation context
+  - Link to `doc/SERVICE_DOC.md` for documentation context
   - Test results summary from Phase 2
 - **Labels:** automatically applied based on change type (e.g., `feature`, `bugfix`, `docs`)
 - **Reviewers:** to be assigned based on repository settings
 
-Once the PR is open, the agent will record the PR URL in `pr-log/<ticket_id>.md`
+Once the PR is open, the agent will record the PR URL in `doc/pr-log/<ticket_id>.md`
 by appending the following section:
 
 ```markdown
@@ -67,7 +67,7 @@ by appending the following section:
 ```
 
 This closes the traceability chain: from requirement → plan → code → docs → PR,
-everything is linked through `pr-log/<ticket_id>.md`.
+everything is linked through `doc/pr-log/<ticket_id>.md`.
 
 ### Step 2 · Run GitHub Advanced Security (GHAS) Checks
 Upon PR creation, this agent will trigger and monitor the GitHub Advanced

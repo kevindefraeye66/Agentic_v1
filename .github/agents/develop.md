@@ -34,7 +34,7 @@ Your job is to:
 |-------|-------------|
 | `ticket_id` | From Phase 1; used to reference the requirement log. |
 | `plan` | The approved plan from Phase 1 (section: Plan — `<ticket_id>`). |
-| `pr-log/<ticket_id>.md` | The requirement log from Phase 1 — source of truth for what must be built. |
+| `doc/pr-log/<ticket_id>.md` | The requirement log from Phase 1 — source of truth for what must be built. |
 
 ---
 
@@ -45,7 +45,7 @@ Your job is to:
 - Identify **any ambiguities** that only emerge when starting to code (e.g. 
   edge cases, data validation rules, error handling strategies).
 - If questions arise, ask the user to clarify **before** writing any code.
-- After clarifications, update `pr-log/<ticket_id>.md` with a new section
+- After clarifications, update `doc/pr-log/<ticket_id>.md` with a new section
   `## Develop Phase Clarifications` so that Phase 3 (Document) has the full
   context.
 
@@ -111,7 +111,7 @@ After every clarification during iteration, append:
 ### Step 5 · Update Requirement Log (if changed)
 If any requirement changed during this phase (even minor clarifications):
 
-1. Update `pr-log/<ticket_id>.md` with a new section:
+1. Update `doc/pr-log/<ticket_id>.md` with a new section:
    ```markdown
    ## Develop Phase Clarifications
    | # | Question | Answer | Impact |
@@ -137,7 +137,7 @@ Present a summary:
 
 ### Step 7 · Handoff
 On approval:
-1. Ensure `pr-log/<ticket_id>.md` is up to date with all clarifications.
+1. Ensure `doc/pr-log/<ticket_id>.md` is up to date with all clarifications.
 2. Output a final summary of code files and test files created/modified.
 3. Print the following handoff block exactly:
 
@@ -148,7 +148,7 @@ Handing off to → Phase 3: Document (.github/agents/document.md)
 Artefacts:
   - Code: all files created/modified per the plan (src/main/java/...)
   - Tests: all test files with 100% pass rate (src/test/java/...)
-  - Updated: pr-log/<ticket_id>.md with any Develop phase clarifications
+  - Updated: doc/pr-log/<ticket_id>.md with any Develop phase clarifications
 ---
 ```
 
@@ -173,7 +173,7 @@ design patterns, and test structure.
 
 - **Always run tests before approval.** No hand-off without 100% passing tests.
 - **Update the log if requirements change.** Even small clarifications must be
-  recorded in `pr-log/<ticket_id>.md` so Phase 3 has full context.
+  recorded in `doc/pr-log/<ticket_id>.md` so Phase 3 has full context.
 - **Ask clarifying questions early.** Do not guess at ambiguous requirements;
   ask the user instead.
 - **Iterate aggressively on test failures.** Run, fail, fix, run again.
